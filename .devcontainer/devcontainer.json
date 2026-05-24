@@ -29,7 +29,7 @@
         "editor.quickSuggestionsDelay": 10,
         "editor.suggestOnTriggerCharacters": true,
         "editor.suggestMaxVisibleResults": 1,
-        "editor.suggestLineHeight": 15,
+        "editor.suggestLineHeight": 5,
         "editor.parameterHints.enabled": false,
         "editor.inlineParameterHints.enabled": false,
         "editor.signatureHelpEnabled": false,

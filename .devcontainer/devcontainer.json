@@ -1,0 +1,77 @@
+{
+  "name": "DSA Exam Setup",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-python.debugpy",
+        "formulahendry.code-runner",
+        "aaron-bond.better-comments",
+        "eamodio.gitlens",
+        "usernamehw.errorlens"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Abyss",
+        "security.workspace.trust.untrustedFiles": "open",
+        "code-runner.runInTerminal": true,
+        "json.schemes": [],
+        "terminal.integrated.enableMultiLinePostekarning": "never",
+        "editor.fontFamily": "Consolas, 'Courier New', monospace, Zapfino",
+        "files.autoSave": "afterDelay",
+        "editor.quickSuggestions": {
+          "other": true,
+          "comments": true,
+          "strings": true
+        },
+        "editor.quickSuggestionsDelay": 10,
+        "editor.suggestOnTriggerCharacters": true,
+        "editor.suggestMaxVisibleResults": 1,
+        "editor.suggestLineHeight": 15,
+        "editor.parameterHints.enabled": false,
+        "editor.inlineParameterHints.enabled": false,
+        "editor.signatureHelpEnabled": false,
+        "editor.suggest.showInlineDetails": false,
+        "editor.inlineSuggest.enabled": true,
+        "editor.inlineSuggest.suppressSuggestions": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.inlineSuggest.edits.showLongDistanceHint": false,
+        "editor.inlineSuggest.experimental.emptyResponseInformation": false,
+        "editor.inlineSuggest.suppressInSnippetMode": false,
+        "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+        "editor.screenReaderAnnounceInlineSuggestion": false,
+        "workbench.editor.empty.hint": "hidden",
+        "terminal.integrated.suggest.quickSuggestions": {
+          "commands": "on",
+          "arguments": "on",
+          "unknown": "on"
+        },
+        "editor.wordBasedSuggestions": "currentDocument",
+        "accessibility.signals.nextEditSuggestion": {
+          "sound": "off"
+        },
+        "accessibility.signals.lineHasInlineSuggestion": {
+          "sound": "off"
+        },
+        "search.searchView.keywordSuggestions": true,
+        "editor.inlineSuggest.edits.showCollapsed": true,
+        "terminal.integrated.stickyScroll.enabled": false,
+        "git.enableSmartCommit": true,
+        "git.autofetch": true,
+        "terminal.integrated.enableMultiLinePasteWarning": "never",
+        "explorer.confirmDelete": false,
+        "workbench.startupEditor": "none",
+        "terminal.integrated.initialHint": false,
+        "chat.viewSessions.orientation": "stacked",
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.python",
+          "editor.formatOnSave": true
+        }
+      }
+    }
+  },
+  "postCreateCommand": "pip install --upgrade pip && pip install pandas numpy scikit-learn matplotlib jupyter",
+  "remoteUser": "vscode"
+}
